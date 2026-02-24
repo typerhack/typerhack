@@ -1,53 +1,63 @@
-# Hi, I'm Daniel Dolatabadi
+# Daniel Dolatabadi
 
-Senior Full-Stack Developer focused on building production web apps with **Node.js, React/Next.js, TypeScript, and AI integrations**.
+**Senior Full-Stack Developer**  
+Node.js | React / Next.js | TypeScript | AI/LLM Integration
 
-- 5+ years delivering end-to-end products (backend architecture to frontend UX and deployment)
-- Built scalable systems with auth, payments, streaming, and CMS tooling
-- Product-minded engineer with an MBA background
+I build production systems end-to-end: architecture, APIs, frontend delivery, and deployment.
+
+## Snapshot
+
+- 5+ years building and shipping full-stack products
+- Experience owning backend, frontend, infra, and security in production
+- Built AI-enabled platforms with provider abstraction and structured outputs
+- MBA background with strong product and business context
 - Open to full-time remote roles and relocation
 
-## What I Build
+## Impact Highlights
 
-- Production-grade **REST APIs** and full-stack applications
-- **AI/LLM-enabled platforms** with multi-provider abstraction and structured outputs
-- Real-time systems with **SSE streaming**, job control, and observability
-- Secure authentication flows (JWT rotation, OAuth, OTP, RBAC, device tracking)
-- Performance-focused web apps (SSR/SSG/ISR, code splitting, indexing, caching)
+- Built a drag-and-drop CMS page builder with 37 reusable section types
+- Implemented complete auth flows: JWT rotation, OAuth, OTP, RBAC, device sessions
+- Delivered real-time SSE pipelines for long-running tasks with pause/resume/cancel
+- Integrated Stripe checkout and webhook-driven order automation
+- Improved page performance (including major PageSpeed gains and load-time reduction)
+- Responded to critical CVEs in production and hardened infrastructure
 
-## Tech I Use Most
+## Core Stack
 
-`TypeScript` `JavaScript` `Node.js` `Express.js` `React` `Next.js` `MongoDB` `Mongoose`  
-`Redux Toolkit` `Tailwind CSS` `Zod` `Stripe` `Playwright` `Jest` `PM2` `Nginx`
+**Frontend**  
+`React` `Next.js` `TypeScript` `Redux Toolkit` `Tailwind CSS` `Zod`
 
-## Featured Work
+**Backend**  
+`Node.js` `Express.js` `MongoDB` `Mongoose` `REST APIs` `JWT` `OAuth`
 
-### Athena Telecom (Enterprise Platform)
-- Built a custom drag-and-drop CMS page builder with 37 section types
-- Implemented full auth stack: JWT + refresh rotation, OAuth, OTP, RBAC, reCAPTCHA
-- Delivered search, blog engine, quote cart, and production deployment pipeline
+**AI & Automation**  
+`OpenRouter` `Gemini` `Ollama` `OpenAI` `Anthropic` `Playwright` `SSE`
 
-### Green Leaf Printing House (E-commerce)
-- Designed MERN platform with Stripe checkout and webhook-driven order automation
-- Implemented loyalty/coupon systems, media pipeline (Multer + Sharp), and email workflows
-- Improved user and admin experience with rich dashboards and optimized front-end delivery
+**Infra**  
+`PM2` `Nginx` `Docker` `Ubuntu` `Fail2Ban` `Let's Encrypt`
 
-### AI-Powered SEO & Marketing Assistant (Personal)
-- Built a multi-provider AI layer (OpenRouter, Gemini, Ollama, OpenAI, Anthropic)
-- Added persistent conversation memory and fallback/rate-limit handling
-- Implemented Playwright crawling + real-time SSE progress + reporting workflows
+## Featured Projects
+
+### Athena Telecom
+- Enterprise Next.js platform for a satellite communications company
+- Custom CMS builder, full auth system, search/blog/catalog, production deployment
+
+### Green Leaf Printing House
+- MERN e-commerce system with Stripe payments and webhook order workflows
+- Loyalty + coupon engines, media processing pipeline, transactional email system
+
+### AI-Powered SEO & Marketing Assistant
+- Multi-provider AI layer with fallback and model/provider health handling
+- Persistent conversation memory + structured output parsing + crawler workflows
 
 ## Open Source
 
-- **Lonely Assistant for Obsidian**: AI assistant plugin for Obsidian (TypeScript)
-- **LAMP Install Script**: Shell automation for Ubuntu/WSL development setup
+- **Lonely Assistant for Obsidian**: AI assistant plugin (TypeScript)
+- **LAMP Install Script**: Ubuntu/WSL environment automation (Shell)
 
 ## Contact
 
 - Portfolio: [daniel-dolatabadi.vercel.app](https://daniel-dolatabadi.vercel.app/)
 - LinkedIn: [linkedin.com/in/danieldolatabadi](https://linkedin.com/in/danieldolatabadi)
+- GitHub: [github.com/typerhack](https://github.com/typerhack)
 - Email: [daniel.dolatabadi@gmail.com](mailto:daniel.dolatabadi@gmail.com)
-
----
-
-I enjoy building reliable systems that solve real business problems, not just demos.
