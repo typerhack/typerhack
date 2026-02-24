@@ -8,9 +8,10 @@ I build production systems end-to-end: architecture, APIs, frontend delivery, an
 ## Snapshot
 
 - 5+ years building and shipping full-stack products
+- 4.5 years at Hybevo delivering production React/Next.js frontends
 - Experience owning backend, frontend, infra, and security in production
 - Built AI-enabled platforms with provider abstraction and structured outputs
-- MBA background with strong product and business context
+- MBA-informed product thinking: business outcomes, not just shipped code
 - Open to full-time remote roles and relocation
 
 ## Impact Highlights
@@ -19,7 +20,8 @@ I build production systems end-to-end: architecture, APIs, frontend delivery, an
 - Implemented complete auth flows: JWT rotation, OAuth, OTP, RBAC, device sessions
 - Delivered real-time SSE pipelines for long-running tasks with pause/resume/cancel
 - Integrated Stripe checkout and webhook-driven order automation
-- Improved page performance (including major PageSpeed gains and load-time reduction)
+- Improved PageSpeed from 46 to 97
+- Reduced page load times by approximately 30%
 - Responded to critical CVEs in production and hardened infrastructure
 
 ## Core Stack
@@ -48,7 +50,9 @@ I build production systems end-to-end: architecture, APIs, frontend delivery, an
 
 ### AI-Powered SEO & Marketing Assistant
 - Multi-provider AI layer with fallback and model/provider health handling
-- Persistent conversation memory + structured output parsing + crawler workflows
+- Built with 63 API routes and 18 MongoDB models
+- 4-tier persistent memory, structured output parsing, and circuit-breaker recovery
+- Playwright crawling with real-time SSE progress workflows
 
 ## Open Source
 
