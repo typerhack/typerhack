@@ -6,7 +6,7 @@
 **Email:** daniel.dolatabadi@gmail.com
 **Phone:** +44 7947 166910 (WhatsApp available)
 **Website:** [daniel-dolatabadi.vercel.app](https://daniel-dolatabadi.vercel.app/)
-**LinkedIn:** [linkedin.com/in/danieldolatabadi](https://linkedin.com/in/danieldolatabadi) (500+ connections)
+**LinkedIn:** [linkedin.com/in/danieldolatabadi](https://linkedin.com/in/danieldolatabadi)
 **GitHub:** [github.com/typerhack](https://github.com/typerhack)
 
 ---
@@ -28,21 +28,21 @@ MBA background informs a product mindset: building systems that solve real busin
 | **Frontend** | React.js (v18/v19), Next.js (v15/v16 + Turbopack), TypeScript, JavaScript (ES6+), HTML5, CSS3 |
 | **State Management** | Redux Toolkit (multi-slice: cart, auth, consent, config; Redux Persist, localStorage hydration), Context API |
 | **Rendering** | SSR, SSG, ISR — applied per page type based on content freshness and performance requirements |
-| **Styling & UI** | Tailwind CSS (v3/v4), shadcn/ui, CSS Modules, Framer Motion, Responsive Design, Dark Mode, RTL/LTR layouts |
+| **Styling & UI** | Tailwind CSS (v3/v4), shadcn/ui, CSS Modules, Framer Motion, GSAP, Responsive Design, Dark Mode, RTL/LTR layouts |
 | **CMS / Page Builder** | Custom drag-and-drop page builder (37 section types, @dnd-kit core/sortable/modifiers), dynamic component registry, Zod-validated section schemas, lazy-loaded editors, real-time unsaved change tracking |
 | **Real-time & Async** | Server-Sent Events (SSE) — streaming progress, global connection registry, pause/resume/cancel patterns, heartbeat mechanism; node-cron (scheduled jobs) |
 | **AI/LLM Integration** | Multi-provider abstraction (OpenRouter 200+ models, Google Gemini, Ollama, OpenAI, Anthropic), AIManager singleton + factory pattern, auto-fallback on rate limits, provider health monitoring, per-model usage tracking, 4-tier persistent conversation memory (history, preferences, context, knowledge), prompt engineering, structured JSON output parsing with multi-format fallback, circuit breaker pattern, chunked batch AI processing |
 | **Web Automation** | Playwright (headless browser crawling, full DOM rendering, SEO data extraction, robots.txt compliance) |
 | **Forms & Validation** | React Hook Form, Zod (frontend + API layer), express-validator |
-| **UI Libraries** | dnd-kit, TipTap (rich text with extensions), Quill, Recharts (data dashboards), Swiper, Framer Motion, React Dropzone, React Hot Toast, shadcn/ui, Crisp Chat |
-| **Auth & Security** | JWT (access + refresh token rotation, httpOnly Secure SameSite cookies), Google OAuth, OTP verification, bcrypt (10 salt rounds), reCAPTCHA v3, device tracking (multi-device sessions), RBAC with granular permissions, DOMPurify (XSS sanitization) |
+| **UI Libraries** | dnd-kit, TipTap (rich text with extensions), Quill, Recharts (data dashboards), Swiper, Framer Motion, React Dropzone, React Hot Toast, shadcn/ui, Crisp Chat, wavesurfer.js |
+| **Auth & Security** | JWT (access + refresh token rotation, httpOnly Secure SameSite cookies; RS256 asymmetric key signing via jose), Google OAuth, OTP verification, bcrypt (10–12 salt rounds), reCAPTCHA v3, device tracking (multi-device sessions), RBAC with granular permissions, DOMPurify (XSS sanitization) |
 | **Backend** | Node.js, TypeScript, Express.js (v5), Next.js API routes, MVC pattern, REST API design (40–65+ endpoints per project), rate limiting, pagination, full-text search, webhook handling |
 | **Database** | MongoDB + Mongoose ODM (up to 44 models, text indexes, aggregation pipelines, TTL indexes, compound indexes, connection pooling), SQL fundamentals |
 | **Payments** | Stripe (session-based checkout, webhook-driven order automation), coupon/discount system, tiered loyalty program (6 tiers, spend-based calculation) |
 | **File Uploads & Media** | Multer (multipart form handling), Sharp (image processing, validation, resizing), media library with year/month organization |
 | **Email** | Nodemailer + React Email templates, configurable SMTP (Zoho Mail, Gmail), transactional emails with audit logging |
 | **External APIs** | Google Search Console API (OAuth2, query analytics), Google PageSpeed Insights API (Core Web Vitals), Google Drive API (backup/restore), Google Tag Manager (consent mode v2), Google Analytics, OpenRouter API, Google Gemini API, Ollama API |
-| **SEO** | Dynamic meta tags (react-helmet-async), XML sitemap generation with caching, schema.org structured data, Open Graph + Twitter Card, canonical URLs |
+| **SEO** | Dynamic meta tags (react-helmet-async), XML sitemap generation with caching, schema.org structured data (JSON-LD), Open Graph + Twitter Card, canonical URLs, hreflang (multi-locale alternate links) |
 | **Data Export** | ExcelJS (Excel export), PapaParse (CSV parsing/export) |
 | **Logging** | Winston structured logging with daily file rotation (winston-daily-rotate-file) |
 | **Performance** | Code splitting (Vite manual chunks), React.lazy + Suspense, Turbopack, bundle analysis, memory-optimized builds, database indexing |
@@ -55,6 +55,29 @@ MBA background informs a product mindset: building systems that solve real busin
 ---
 
 ## Professional Experience
+
+### Freelance Full-Stack Developer
+**Signal Before Noise** (client) | [signalb4noise.com](https://signalb4noise.com) | May 2026 | Freelance
+
+Designed and shipped a production publishing platform for a client from zero to deployment in 9 days, then continued iterating to v1.51 — adding an analytics dashboard, tiered backup/restore system, and subscriber management post-launch.
+
+**Key Achievements:**
+
+- Built a **multilingual Next.js 16 App Router** application supporting 4 locales (Persian, English, Arabic, Turkish) with automatic RTL/LTR layout switching and per-locale hreflang alternate tags
+- Implemented **custom JWT auth with RS256 asymmetric keys** via `jose` — httpOnly Secure SameSite=Strict cookies, bcrypt (cost 12), rate-limited login (5 attempts per 15 minutes), credentials in environment variables (no user table)
+- Built **TipTap v3 rich text editor** with per-locale translation tabs, text alignment, table support (insert/edit contextual controls), image and link extensions; Notes (short-form content) alongside full articles
+- Designed **8 MongoDB models** (Article, Note, Media, Subscriber, SitePage, BackupConfig, ViewLog, ViewSnapshot) with a nested per-locale translation slot schema; `React.cache()` for query deduplication across server components
+- Built **subscriber system** with email signup, rate limiting (5 req/10 min per IP), duplicate email detection (409), HTML-tag stripping for XSS prevention, and a paginated dashboard with delete
+- Built an **analytics dashboard** — Recharts area and bar charts (30-day cumulative trend, 24h hourly breakdown in Tehran timezone), top content ranking by all-time and 24h views; layered bot suppression (client-side JS gate, User-Agent regex filter, IP+slug dedup via ViewLog TTL collection with 24h expiry)
+- Implemented a **tiered backup and restore system** — mongodump + `.tar.gz` archives, three retention tiers (daily last 3 / weekly last 1 / monthly last 1 / manual never auto-deleted), cron scheduling gated by a separate BACKUP_CRON_TOKEN, `.backup.lock` for concurrency prevention; restore from stored backup or uploaded archive
+- Built media library handling images, audio, and PDFs — UUID filename generation, MIME-type + extension validation, 10MB limit; audio playback via wavesurfer.js waveform player
+- Full **SEO stack**: JSON-LD structured data, canonical URLs, XML sitemap (ISR-cached), Open Graph, hreflang alternate links, robots.txt
+- Implemented **Winston structured logging** with MongoDB transport (30-day TTL index)
+- **Full production deployment in 9 days**: PM2 + Nginx (reverse proxy, security headers) + Cloudflare Full Strict SSL (Origin Certificates) on Ubuntu VPS; hardened with UFW, Fail2ban (4 jails), auditd, rkhunter, kernel sysctl rules, and a dedicated unprivileged app user
+
+**Technologies:** Next.js 16 (App Router), TypeScript, Tailwind CSS v4, MongoDB, Mongoose, TipTap v3, jose (RS256 JWT), bcryptjs, wavesurfer.js, Framer Motion, GSAP, Recharts, Winston, PM2, Nginx, Cloudflare, Ubuntu VPS
+
+---
 
 ### Senior Full-Stack Developer
 **Ecom Edge Innovators LLC** | July 2024 - November 2025 | Full-time

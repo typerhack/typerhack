@@ -16,8 +16,9 @@ I build production systems end-to-end: architecture, APIs, frontend delivery, an
 
 ## Impact Highlights
 
+- Shipped a multilingual publishing platform from zero to production in 9 days
 - Built a drag-and-drop CMS page builder with 37 reusable section types
-- Implemented complete auth flows: JWT rotation, OAuth, OTP, RBAC, device sessions
+- Implemented complete auth flows: JWT rotation (RS256), OAuth, OTP, RBAC, device sessions
 - Delivered real-time SSE pipelines for long-running tasks with pause/resume/cancel
 - Integrated Stripe checkout and webhook-driven order automation
 - Improved PageSpeed from 46 to 97
@@ -39,6 +40,12 @@ I build production systems end-to-end: architecture, APIs, frontend delivery, an
 `PM2` `Nginx` `Docker` `Ubuntu` `Fail2Ban` `Let's Encrypt`
 
 ## Featured Projects
+
+### Signal Before Noise
+- Multilingual Next.js 16 publishing platform (4 locales, RTL/LTR) built and deployed in 9 days
+- Custom RS256 asymmetric JWT auth via `jose`, TipTap v3 rich text editor with per-locale tabs
+- Analytics dashboard (Recharts, bot suppression, Tehran timezone), tiered backup/restore (mongodump, 3 retention tiers)
+- PM2 + Nginx + Cloudflare Full Strict SSL on Ubuntu VPS, hardened with Fail2ban, auditd, and rkhunter
 
 ### Athena Telecom
 - Enterprise Next.js platform for a satellite communications company
