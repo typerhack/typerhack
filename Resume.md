@@ -1,190 +1,82 @@
 # Daniel Dolatabadi
 
-**Senior Full-Stack Developer | Node.js | React | TypeScript | AI/LLM Integration**
+**Senior Full-Stack Developer — Node.js · React · TypeScript**
 
-**Location:** Tehran, Iran (Open to Relocation)
-**Email:** daniel.dolatabadi@gmail.com
-**Phone:** +44 7947 166910 (WhatsApp available)
-**Website:** [daniel-dolatabadi.vercel.app](https://daniel-dolatabadi.vercel.app/)
-**LinkedIn:** [linkedin.com/in/danieldolatabadi](https://linkedin.com/in/danieldolatabadi)
-**GitHub:** [github.com/typerhack](https://github.com/typerhack)
+Tehran, Iran (open to relocation) · daniel.dolatabadi@gmail.com · +44 7947 166910
+[daniel-dolatabadi.vercel.app](https://daniel-dolatabadi.vercel.app/) · [linkedin.com/in/danieldolatabadi](https://linkedin.com/in/danieldolatabadi) · [github.com/typerhack](https://github.com/typerhack)
 
 ---
 
-## Professional Summary
+## Summary
 
-Senior Full-Stack Developer with 5+ years of experience building production-grade applications with Node.js, React, Next.js, and TypeScript. Proven track record owning projects end-to-end — from backend API and database architecture through frontend delivery and production deployment.
+Full-stack developer with 6+ years building and operating production web applications end to end — backend APIs and data modeling through frontend delivery, deployment, and incident response. Recent work centers on AI-native systems: a client CRM whose autonomous research agent is walled off from customer data, and a production media platform where an agent runs the editorial pipeline through a token-authenticated API. MBA background; used to owning a product surface rather than a ticket queue.
 
-Hands-on experience designing multi-provider AI/LLM integrations, including provider abstraction layers, prompt engineering, memory-aware conversational systems, and structured output parsing. Built complete authentication systems, real-time SSE streaming, payment integrations, and complex UI systems including a custom drag-and-drop CMS page builder.
+---
 
-MBA background informs a product mindset: building systems that solve real business problems, not just working code. Security-conscious — responded to critical CVEs in production. Available immediately for full-time remote or relocating positions.
+## Experience
+
+### Independent Full-Stack Developer — Contract
+**2026 – Present**
+
+- Building a multi-branch CRM and market-intelligence platform for a client R&D engagement (ongoing; demo available), migrating 10,000+ legacy records onto a self-hosted Docker stack
+- Sandboxed an autonomous research agent from client data — no database access, scoped API key — so prompt injection yields at worst bad research; covered by 2,000+ automated tests
+- Delivered a multilingual publishing platform (4 locales, automatic RTL/LTR) from zero to production in **9 days** for [signalb4noise.com](https://signalb4noise.com), then shipped continuous releases adding an analytics dashboard, tiered backup with Google Drive sync, and a series system
+
+### Senior Full-Stack Developer — Ecom Edge Innovators LLC
+**July 2024 – November 2025**
+
+- Cut page load times ~**30%** through code splitting, lazy loading, Turbopack migration, and caching
+- Built a drag-and-drop CMS page builder (37 section types, @dnd-kit) that moved routine content changes from developer tickets to client self-service
+- Designed REST APIs and MongoDB schemas across two production applications — 40–65 endpoints and 21–44 models each, with compound/text/TTL indexing and aggregation pipelines
+- Built authentication end to end: JWT with refresh-token rotation, Google OAuth, OTP verification, reCAPTCHA v3, device tracking, and RBAC across four roles
+- Integrated Stripe checkout with webhook-driven order automation, a coupon engine, and a 6-tier spend-based loyalty program
+- Led response to two critical CVEs (React Server Components, MongoDB) — assessed exposure, patched production, added hardening
+- Key projects: [athenatelecom.ae](https://athenatelecom.ae) (enterprise Next.js for a Dubai satellite communications firm), [glph.ca](https://glph.ca) (MERN e-commerce for a Canadian print manufacturer)
+
+### Front-End Developer — Hybevo
+**March 2020 – September 2024**
+
+- Raised Google PageSpeed from **46 to 97** through systematic performance work
+- Built the reusable component architecture behind the company's production front ends
+- Integrated REST APIs and shared application state; owned cross-browser and responsive behavior
+
+---
+
+## Selected Projects
+
+**Zyberis** — [zyberis.com](https://zyberis.com) · Next.js 16, TypeScript, MongoDB · in production
+Media platform operated by an autonomous AI agent that authors, enriches, and publishes content through a token-authenticated API with no database credentials exposed. Self-describing manifest endpoint, four-stage content pipeline, cookieless analytics with nightly rollups, tiered encrypted backup to Google Drive.
+
+**AI SEO & Marketing Assistant** — Next.js, Playwright · private
+Multi-provider LLM abstraction (OpenRouter, Gemini, Ollama, OpenAI, Anthropic) with automatic failover on rate limits, provider health monitoring, and 4-tier persistent conversation memory. 63 API routes, 18 data models, Playwright crawler with SSE progress streaming.
+
+**Lonely Assistant for Obsidian** — TypeScript · open source
+Plugin connecting Obsidian to local Ollama or OpenAI-compatible servers for in-editor chat.
 
 ---
 
 ## Technical Skills
 
-| Category | Technologies |
+| | |
 |---|---|
-| **Frontend** | React.js (v18/v19), Next.js (v15/v16 + Turbopack), TypeScript, JavaScript (ES6+), HTML5, CSS3 |
-| **State Management** | Redux Toolkit (multi-slice: cart, auth, consent, config; Redux Persist, localStorage hydration), Context API |
-| **Rendering** | SSR, SSG, ISR — applied per page type based on content freshness and performance requirements |
-| **Styling & UI** | Tailwind CSS (v3/v4), shadcn/ui, CSS Modules, Framer Motion, GSAP, Responsive Design, Dark Mode, RTL/LTR layouts |
-| **CMS / Page Builder** | Custom drag-and-drop page builder (37 section types, @dnd-kit core/sortable/modifiers), dynamic component registry, Zod-validated section schemas, lazy-loaded editors, real-time unsaved change tracking |
-| **Real-time & Async** | Server-Sent Events (SSE) — streaming progress, global connection registry, pause/resume/cancel patterns, heartbeat mechanism; node-cron (scheduled jobs) |
-| **AI/LLM Integration** | Multi-provider abstraction (OpenRouter 200+ models, Google Gemini, Ollama, OpenAI, Anthropic), AIManager singleton + factory pattern, auto-fallback on rate limits, provider health monitoring, per-model usage tracking, 4-tier persistent conversation memory (history, preferences, context, knowledge), prompt engineering, structured JSON output parsing with multi-format fallback, circuit breaker pattern, chunked batch AI processing |
-| **Web Automation** | Playwright (headless browser crawling, full DOM rendering, SEO data extraction, robots.txt compliance) |
-| **Forms & Validation** | React Hook Form, Zod (frontend + API layer), express-validator |
-| **UI Libraries** | dnd-kit, TipTap (rich text with extensions), Quill, Recharts (data dashboards), Swiper, Framer Motion, React Dropzone, React Hot Toast, shadcn/ui, Crisp Chat, wavesurfer.js |
-| **Auth & Security** | JWT (access + refresh token rotation, httpOnly Secure SameSite cookies; RS256 asymmetric key signing via jose), Google OAuth, OTP verification, bcrypt (10–12 salt rounds), reCAPTCHA v3, device tracking (multi-device sessions), RBAC with granular permissions, DOMPurify (XSS sanitization) |
-| **Backend** | Node.js, TypeScript, Express.js (v5), Next.js API routes, MVC pattern, REST API design (40–65+ endpoints per project), rate limiting, pagination, full-text search, webhook handling |
-| **Database** | MongoDB + Mongoose ODM (up to 44 models, text indexes, aggregation pipelines, TTL indexes, compound indexes, connection pooling), SQL fundamentals |
-| **Payments** | Stripe (session-based checkout, webhook-driven order automation), coupon/discount system, tiered loyalty program (6 tiers, spend-based calculation) |
-| **File Uploads & Media** | Multer (multipart form handling), Sharp (image processing, validation, resizing), media library with year/month organization |
-| **Email** | Nodemailer + React Email templates, configurable SMTP (Zoho Mail, Gmail), transactional emails with audit logging |
-| **External APIs** | Google Search Console API (OAuth2, query analytics), Google PageSpeed Insights API (Core Web Vitals), Google Drive API (backup/restore), Google Tag Manager (consent mode v2), Google Analytics, OpenRouter API, Google Gemini API, Ollama API |
-| **SEO** | Dynamic meta tags (react-helmet-async), XML sitemap generation with caching, schema.org structured data (JSON-LD), Open Graph + Twitter Card, canonical URLs, hreflang (multi-locale alternate links) |
-| **Data Export** | ExcelJS (Excel export), PapaParse (CSV parsing/export) |
-| **Logging** | Winston structured logging with daily file rotation (winston-daily-rotate-file) |
-| **Performance** | Code splitting (Vite manual chunks), React.lazy + Suspense, Turbopack, bundle analysis, memory-optimized builds, database indexing |
-| **Testing** | Jest, React Testing Library |
-| **DevOps & Infrastructure** | PM2 (process management), Nginx (reverse proxy, security headers, SSL termination), Fail2Ban (brute-force protection), AppArmor, Let's Encrypt SSL (automated renewal), Ubuntu VPS, CI/CD, Security Incident Response |
-| **Containerization** | Docker (custom images, Docker Compose, multi-container environments) — personal project experience |
-| **Design Tools** | Figma (design-to-code implementation) |
-| **Tools** | Git, Agile/Scrum, Code Review, Technical Documentation (20+ pages per project) |
-
----
-
-## Professional Experience
-
-### Freelance Full-Stack Developer
-**Signal Before Noise** (client) | [signalb4noise.com](https://signalb4noise.com) | May 2026 | Freelance
-
-Designed and shipped a production publishing platform for a client from zero to deployment in 9 days, then continued iterating to v1.51 — adding an analytics dashboard, tiered backup/restore system, and subscriber management post-launch.
-
-**Key Achievements:**
-
-- Built a **multilingual Next.js 16 App Router** application supporting 4 locales (Persian, English, Arabic, Turkish) with automatic RTL/LTR layout switching and per-locale hreflang alternate tags
-- Implemented **custom JWT auth with RS256 asymmetric keys** via `jose` — httpOnly Secure SameSite=Strict cookies, bcrypt (cost 12), rate-limited login (5 attempts per 15 minutes), credentials in environment variables (no user table)
-- Built **TipTap v3 rich text editor** with per-locale translation tabs, text alignment, table support (insert/edit contextual controls), image and link extensions; Notes (short-form content) alongside full articles
-- Designed **8 MongoDB models** (Article, Note, Media, Subscriber, SitePage, BackupConfig, ViewLog, ViewSnapshot) with a nested per-locale translation slot schema; `React.cache()` for query deduplication across server components
-- Built **subscriber system** with email signup, rate limiting (5 req/10 min per IP), duplicate email detection (409), HTML-tag stripping for XSS prevention, and a paginated dashboard with delete
-- Built an **analytics dashboard** — Recharts area and bar charts (30-day cumulative trend, 24h hourly breakdown in Tehran timezone), top content ranking by all-time and 24h views; layered bot suppression (client-side JS gate, User-Agent regex filter, IP+slug dedup via ViewLog TTL collection with 24h expiry)
-- Implemented a **tiered backup and restore system** — mongodump + `.tar.gz` archives, three retention tiers (daily last 3 / weekly last 1 / monthly last 1 / manual never auto-deleted), cron scheduling gated by a separate BACKUP_CRON_TOKEN, `.backup.lock` for concurrency prevention; restore from stored backup or uploaded archive
-- Built media library handling images, audio, and PDFs — UUID filename generation, MIME-type + extension validation, 10MB limit; audio playback via wavesurfer.js waveform player
-- Full **SEO stack**: JSON-LD structured data, canonical URLs, XML sitemap (ISR-cached), Open Graph, hreflang alternate links, robots.txt
-- Implemented **Winston structured logging** with MongoDB transport (30-day TTL index)
-- **Full production deployment in 9 days**: PM2 + Nginx (reverse proxy, security headers) + Cloudflare Full Strict SSL (Origin Certificates) on Ubuntu VPS; hardened with UFW, Fail2ban (4 jails), auditd, rkhunter, kernel sysctl rules, and a dedicated unprivileged app user
-
-**Technologies:** Next.js 16 (App Router), TypeScript, Tailwind CSS v4, MongoDB, Mongoose, TipTap v3, jose (RS256 JWT), bcryptjs, wavesurfer.js, Framer Motion, GSAP, Recharts, Winston, PM2, Nginx, Cloudflare, Ubuntu VPS
-
----
-
-### Senior Full-Stack Developer
-**Ecom Edge Innovators LLC** | July 2024 - November 2025 | Full-time
-
-Built and maintained production applications in a startup environment, owning features end-to-end from backend API design through frontend delivery and production deployment.
-
-**Key Achievements:**
-
-- Designed and built a **custom drag-and-drop CMS page builder** (37 section types, @dnd-kit) — enables non-technical clients to compose pages from a registry of pre-built, Zod-validated section components with real-time unsaved change tracking and lazy-loaded editors
-- Designed and maintained **REST APIs** across two production applications — 30–44 endpoints per project covering authentication, product catalog, search, user management, media, and business logic
-- Built **complete authentication systems** from scratch: JWT access + refresh token rotation, Google OAuth, OTP email verification, reCAPTCHA v3, bcrypt, device tracking, and role-based access control with granular permissions (owner/admin/editor/customer)
-- Implemented **Redux Toolkit multi-slice state management** across complex applications: shopping cart with deduplication and localStorage persistence (Redux Persist), user auth state, cookie consent, and global config — with client-side hydration to prevent SSR mismatches
-- Applied **SSR, SSG, and ISR strategically** per page type in Next.js — balancing freshness, SEO, and performance
-- Built **real-time SSE streaming** for long-running operations (web crawling, PageSpeed analysis) — global connection registry, per-channel routing, heartbeat mechanism, pause/resume/cancel
-- Designed **21–44 MongoDB models** per project with Mongoose ODM: text indexes for full-text search, aggregation pipelines for complex queries, TTL indexes for session expiration, compound indexes for query optimization
-- Implemented **Stripe payment integration**: session-based checkout, webhook-driven order status automation, coupon/discount system with usage tracking, tiered loyalty program (6 tiers, spend-based automatic calculation)
-- Built file upload and media management system using **Multer + Sharp**: image processing, validation, type enforcement, organized storage
-- Integrated **Nodemailer** with configurable SMTP (Zoho Mail, Gmail) and React Email templates for transactional emails with audit logging
-- Integrated **Google Drive API** (OAuth2) for automated database backup/restore with progress tracking and scheduling
-- Managed **PM2 + Nginx + Fail2Ban + AppArmor + Let's Encrypt SSL** on Ubuntu VPS — production deployment, certificate auto-renewal, reverse proxy configuration, security hardening
-- Reduced page load times by approximately **30%** through code splitting, lazy loading, Turbopack migration, and caching
-- Responded to critical security incidents (CVE-2025-55182, CVE-2025-14847) — assessed exposure, patched production systems, implemented hardening measures
-- Translated Figma designs into **pixel-perfect, accessible, responsive implementations** including RTL/LTR multilingual layouts
-- Wrote **20+ pages of technical documentation** per project covering API patterns, auth system, deployment, backup system, and design system
-
-**Projects Delivered:**
-
-**Athena Telecom LLC** | [athenatelecom.ae](https://athenatelecom.ae)
-Enterprise Next.js 16 application for a satellite communications company (Dubai, UAE). Built the custom drag-and-drop CMS page builder (37 section types, @dnd-kit), Redux Toolkit multi-slice state (cart, user, consent), full blog engine with Quill rich text editor, product/services/solutions catalog, unified full-text search, quote cart system, complete JWT auth (refresh token rotation, device tracking, reCAPTCHA v3, Google OAuth, OTP, RBAC), Google Drive backup integration, Nodemailer + React Email template system, Google Tag Manager with consent mode v2, PM2 + Nginx + Fail2Ban production deployment.
-
-**Green Leaf Printing House** | [glph.ca](https://glph.ca)
-Production e-commerce platform (MERN stack, monorepo) for a Canadian printing company. Backend: Express.js v5 with 27 route files, 38 controllers, 44 MongoDB models. Features: Stripe checkout + webhook-driven order status, tiered loyalty program (6 tiers, spend-based calculation), coupon system, Multer + Sharp file uploads, Nodemailer (Zoho Mail SMTP) transactional emails, advanced popup manager with analytics (views, clicks, email captures), XML sitemap with caching, PM2 + Nginx + Let's Encrypt SSL. Frontend: React 18 + Vite with TypeScript, Redux Toolkit + Redux Persist (cart/auth), React Hook Form + Zod, Framer Motion animations, Recharts data dashboards, TipTap rich text editor, Axios interceptors for token handling, Crisp Chat live support.
-
-**Technologies:** React, Next.js, TypeScript, Node.js, Express.js, MongoDB, Mongoose, JWT, OAuth, Stripe, Multer, Sharp, Nodemailer, Redux Toolkit, Framer Motion, TipTap, Recharts, dnd-kit, SSR/SSG/ISR, SSE, REST APIs, PM2, Nginx, Let's Encrypt, Git
-
----
-
-### Front-End Developer
-**Hybevo** | March 2020 - September 2024 | 4 years 7 months | Full-time
-
-Developed production front-end applications with focus on performance, scalability, and user experience.
-
-**Key Achievements:**
-
-- Improved Google PageSpeed score from **46 to 97** through systematic performance optimization, code splitting, and asset optimization
-- Built scalable UI component architecture emphasizing reusability and maintainability
-- Integrated REST APIs and implemented Context API for shared application state
-- Collaborated closely with designers and backend developers to implement features accurately
-- Enhanced cross-browser compatibility and responsive design across devices
-
-**Technologies:** React, Next.js, TypeScript, JavaScript, Context API, REST APIs, HTML5, CSS3, Git
-
----
-
-### Computational Design Instructor (Grasshopper)
-**Pars University of Art and Architecture** | December 2017 - March 2020 | 2 years 4 months
-
-- Taught Grasshopper (parametric/computational design) to architecture students
-- Developed curriculum for visual programming and algorithmic thinking in architectural design
-
----
-
-## Projects
-
-**AI-Powered SEO & Marketing Assistant** | Next.js 15, Node.js, TypeScript, MongoDB, Playwright | Personal Project | In Development
-Full-stack AI platform with 63 API routes, 18 MongoDB models, and 11 dashboard sections. Core: built a **multi-provider AI abstraction layer** from scratch — unified interface across OpenRouter (200+ models), Google Gemini, Ollama (local LLMs), OpenAI, and Anthropic. Implemented auto-fallback on rate limits, provider health monitoring, per-model usage tracking, and a 4-tier persistent conversation memory system (history, preferences, context, knowledge) injected into every prompt. Additional features: Playwright headless browser web crawling with real-time SSE progress streaming (pause/resume/cancel); Google Search Console API (OAuth2, query analytics, weekly AI reports via node-cron); Google PageSpeed Insights API (Core Web Vitals, desktop/mobile); AI-driven keyword categorization with chunked batch processing; structured JSON output parsing with multi-format fallback; circuit breaker error recovery pattern; Winston structured logging with daily file rotation. Available for local demonstration.
-
-**Lonely Assistant for Obsidian** | TypeScript | Open Source
-AI assistant plugin for Obsidian enabling chat with local Ollama or OpenAI-compatible servers. TypeScript, plugin architecture, and API integration.
-
-**LAMP Install Script** | Shell
-Automated development environment setup script for Ubuntu/WSL. DevOps and infrastructure automation.
+| **Languages** | TypeScript, JavaScript, Shell |
+| **Frontend** | React 18/19, Next.js 15/16 (App Router), Tailwind, Redux Toolkit, SSR/SSG/ISR |
+| **Backend** | Node.js, Express 5, REST API design, WebSockets, Server-Sent Events, node-cron, Winston |
+| **Data** | MongoDB + Mongoose (indexing, aggregation, TTL), SQL fundamentals |
+| **AI/LLM** | Multi-provider abstraction, prompt engineering, structured output parsing, agent API design |
+| **Infrastructure** | Docker, PM2, Nginx, Cloudflare, Let's Encrypt, Fail2ban, Ubuntu VPS, CI/CD |
+| **Also** | JWT/OAuth/RBAC auth systems, Stripe, security incident response, Vitest, Playwright, Jest, Figma-to-code |
 
 ---
 
 ## Education
 
-**Master of Business Administration (MBA)** - Marketing
-Tehran Business School | 2020 - 2022
-*Focus on business operations and client-centric product development.*
-
-**Master of Architecture (M.Arch.)**
-Pars University of Art and Architecture | 2016 - 2018
-*Thesis: "Application of AI with BIM for Architectural Design" — applied AI to optimize building information modeling processes.*
-
-**Bachelor's Degree** - Industrial Management
-Shahrood University of Technology | 2007 - 2011
+**MBA, Marketing** — Tehran Business School, 2020–2022
+**M.Arch** — Pars University of Art and Architecture, 2016–2018 · thesis: applying AI to BIM workflows
+**BSc, Industrial Management** — Shahrood University of Technology, 2007–2011
 
 ---
 
-## Certifications
-
-| Certificate | Issuer | Date |
-|---|---|---|
-| HTML, CSS, and JavaScript for Web Developers | Coursera | March 2022 |
-
----
-
-## Languages
-
-- **English:** Professional working proficiency
-- **Persian:** Native proficiency
-
----
-
-## Additional Information
-
-- Available for full-time remote or relocating positions (visa sponsorship required)
-- Comfortable with remote, hybrid, or on-site arrangements
-- Experienced with pair programming, code review, and agile practices
+English (professional working proficiency) · Persian (native)
+Available immediately. Requires visa sponsorship for relocation.
+</content>
