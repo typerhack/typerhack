@@ -33,16 +33,6 @@ Sends AI coding agents' builds and tests to Linux machines through one shared qu
 
 ---
 
-## Impact highlights
-
-| | |
-|---|---|
-| **9 days** | Zero to production for [Signal Before Noise](https://signalb4noise.com), a 4-locale publishing platform with automatic RTL/LTR |
-| **46 → 97** | Google PageSpeed score, through systematic performance work |
-| **~30%** | Faster page loads via code splitting, lazy loading, rendering-strategy tuning, and caching |
-| **37** | Section types in a drag-and-drop CMS page builder that moved content changes to client self-service |
-| **2 CVEs** | Critical React Server Components and MongoDB vulnerabilities patched in production |
-
 ## Other projects
 
 - **[Zyberis](https://zyberis.com)** — Media platform run by an autonomous AI agent that authors, enriches, and publishes through a token-authenticated API with no database credentials. Content lives in MongoDB, so publishing needs no rebuild; cookieless analytics with live SSE and nightly rollups.
